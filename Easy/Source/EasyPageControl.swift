@@ -43,7 +43,7 @@ public extension UIPageControl {
     
     @discardableResult
     func numberOfPages(_ value: Int) -> Self {
-        self.numberOfPages = 4
+        self.numberOfPages = value
         return self
     }
 }

@@ -62,6 +62,16 @@ public extension UITextField {
         return self
     }
     
+    @discardableResult func textContent(type: UITextContentType) -> Self {
+        self.textContentType = type
+        return self
+    }
+    
+    @discardableResult func delegate(_ delegate: UITextFieldDelegate?) -> Self {
+        self.delegate = delegate
+        return self
+    }
+    
     @discardableResult func addDoneButtonToKeyboard() -> Self {
         let doneToolbar: UIToolbar = UIToolbar(frame: CGRect(x: 0, y: 0, width: 300, height: 40))
         doneToolbar.barStyle = UIBarStyle.default
